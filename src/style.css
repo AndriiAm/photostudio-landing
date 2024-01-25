@@ -12,6 +12,10 @@
   align-items: center;
   min-height: 100px;
 }
+.header__menu {
+  flex: 1 1 auto;
+  margin-left: 156px;
+}
 .header__menu ul {
   display: flex;
 }
@@ -25,6 +29,7 @@
   text-decoration: none;
 }
 .header__button.button {
+  margin-right: 70px;
   width: 120px;
   height: 35px;
   background-color: #ff3c2d;
@@ -41,20 +46,6 @@
 }
 .header__social-media__item:not(:last-child) {
   margin-right: 20px;
-}
-
-.wrapper, .wrapper2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.wrapper {
-  width: 810px;
-}
-
-.wrapper2 {
-  width: 345px;
 }
 
 /*# sourceMappingURL=style.css.map */

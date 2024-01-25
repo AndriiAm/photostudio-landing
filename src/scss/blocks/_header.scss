@@ -4,22 +4,24 @@
   padding: 0 100px;
   align-items: center;
   min-height: 100px;
-  &__menu {
-    & ul {
+  &__menu{
+    flex: 1 1 auto;
+    margin-left: 156px;
+    ul {
       display: flex;
-
     }
-  }
-  &__menu__item {
-    list-style-type: none;
-    padding: 0 20px;
-    font-weight: 500;
-    & a {
-      color: #222;
-      text-decoration: none;
+    &__item {
+      list-style-type: none;
+      padding: 0 20px;
+      font-weight: 500;
+      & a {
+        color: #222;
+        text-decoration: none;
+      }
     }
   }
   &__button.button {
+    margin-right: 70px;
     width: 120px;
     height: 35px;
     background-color: #ff3c2d;
@@ -37,18 +39,4 @@
       margin-right: 20px;
     }
   }
-}
-
-.wrapper, .wrapper2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.wrapper {
-  width: 810px;
-}
-
-.wrapper2 {
-  width: 345px;
 }
