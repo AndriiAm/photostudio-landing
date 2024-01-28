@@ -3,6 +3,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  line-height: 1;
+}
+
+.container {
+  max-width: 1560px;
+  margin: 0 auto;
 }
 
 @import 'blocks/header';
+@import 'blocks/sessions';
+@import 'blocks/headshots';
+@import 'blocks/searching-studio';
+@import 'blocks/services';
+@import 'blocks/headshots-sessions';
