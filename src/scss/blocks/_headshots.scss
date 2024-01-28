@@ -1,0 +1,24 @@
+.main__headshots {
+  padding: 70px 0 0 178px;
+}
+
+.headshots {
+  background: url("images/background/photographer_bg.jpg")  center (center/cover) no-repeat;
+  height: 510px;
+  color: white;
+  &__title {
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 38px;
+  }
+  &__subtitle {
+    font-size: 21px;
+    margin-bottom: 46px;
+  }
+  &__button {
+    width: 215px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+}

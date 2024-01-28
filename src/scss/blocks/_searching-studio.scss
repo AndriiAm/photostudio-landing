@@ -1,0 +1,42 @@
+.searching-studio {
+  position: relative;
+  &__map-wrapper {
+    height: 560px;
+  }
+  &__map {
+    height: 100%;
+  }
+  &__inner {
+    width: 700px;
+    height: 250px;
+    padding: 40px 50px 45px;
+    position: absolute;
+    top: 160px;
+    left: 180px;
+    background-color: white;
+  }
+  &__title {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  &__form {
+    font-size: 18px;
+  }
+  &__inputs-wrapper {
+    display: flex;
+    margin-top: 25px;
+  }
+  &__input {
+    width: 205px;
+    height: 45px;
+    border: none;
+    border-radius: 3px;
+    background-color: #f6f6f6
+  }
+  &__button {
+    font-size: 18px;
+    width: 155px;
+    height: 45px;
+  }
+}
