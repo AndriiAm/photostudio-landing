@@ -1,0 +1,115 @@
+.main__headshots-importance {
+  padding: 74px 0 100px;
+  background-color: #f6f6f6;
+}
+
+.headshots-importance{
+  &__wrapper {
+    position: relative;
+  }
+  &__arrow {
+    position: absolute;
+    top: 326px;
+    left: 10px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.importance{
+  &-explaining {
+    &__title {
+      font-size: 50px;
+      font-weight: 600;
+      margin-bottom: 25px;
+    }
+    &__text {
+      max-width: 620px;
+      font-size: 18px;
+      line-height: 1.78;
+    }
+  }
+  &-tips {
+    &__title {
+      margin-bottom: 70px;
+      font-family: 'Dancing Script', cursive;
+      font-size: 60px;
+      font-weight: 700;
+      font-style: italic;
+      &-num {
+        font-family: 'Dancing Script', cursive;
+        font-size: 75px;
+        font-weight: 700;
+        font-style: italic;
+      }
+    }
+    &__inner {
+      display: grid;
+      grid-template-columns: 350px 300px;
+      grid-template-rows: repeat(3, 1fr);
+      column-gap: 90px;
+      row-gap: 70px;
+      align-items: start;
+
+    }
+    &__item {
+      display: flex;
+      align-items: center;
+      position: relative;
+      line-height: 24px;
+      &:nth-of-type(2) {
+        grid-row: 2/4;
+      }
+      &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #222;
+        opacity: 0.2;
+        position: absolute;
+        top: calc(100% + 20px);
+        margin-bottom: 20px;
+      }
+    }
+    &__icon {
+      position: absolute;
+    }
+    &__text {
+      line-height: 1.5;
+      &--first-col {
+        padding-left: 110px;
+      }
+      &--second-col {
+        padding-left: 80px;
+      }
+    }
+  }
+}
+
+.headshot-importance__services {
+  margin: 22px 0 0 113px;
+}
+
+.headshot-services {
+  color: white;
+  max-width: 1070px;
+  padding: 55px 82px 61px 79px;
+  background-color: #222222;
+  &__title {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 600;
+  }
+  &__paragraph {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 300;
+    &--covid-update {
+      margin-top: 40px;
+
+    }
+  }
+}

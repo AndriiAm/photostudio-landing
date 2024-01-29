@@ -1,0 +1,63 @@
+.main__clients {
+  padding: 99px 0 210px;
+  background-color: #222;
+}
+
+.clients {
+  color: white;
+  text-align: center;
+  &__title {
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  &__subtitle {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 55px;
+  }
+}
+
+.reviews-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  &__author {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  &__mark {
+    display: flex;
+  }
+  &__star {
+    display: block;
+    &:not(:last-child) {
+      margin-right: 3px;
+    }
+  }
+  &__quotes {
+    font-family: 'Catamaran', sans-serif;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    font-size: 220px;
+    color: rgba(255, 254, 254, 0.1);
+  }
+  &__text {
+    margin-top: 35px;
+    padding-left: 45px;
+    text-align: left;
+    position: relative;
+    font-size: 18px;
+    line-height: 32px;
+  }
+}

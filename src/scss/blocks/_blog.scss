@@ -1,0 +1,68 @@
+.blog {
+  padding: 90px 0 120px;
+  text-align: center;
+  &__title {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 55px;
+  }
+  &__subtitle {
+    margin-bottom: 65px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  &__inner {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    &-img {
+      display: block;
+    }
+    &-title {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 28px;
+      text-transform: uppercase;
+      text-align: left;
+    }
+    &-description {
+      position: relative;
+      height: 200px;
+      background-color: #f6f6f6;
+      padding: 30px 21px 30px 25px;
+    }
+    &-info {
+      position: absolute;
+      left: 30px;
+      right: 21px;
+      bottom: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-comments {
+      position: relative;
+      font-size: 16px;
+    }
+  }
+  &__message-icon {
+    display: block;
+    position: absolute;
+  }
+  &__comments-quantity {
+    padding-left: 30px;
+    color: #ff3c2d;
+  }
+  &__date {
+    color: #ababab;
+  }
+  &__button {
+    margin-top: 60px;
+    width: 215px;
+    height: 45px;
+    font-size: 18px;
+  }
+}

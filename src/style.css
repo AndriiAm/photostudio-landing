@@ -342,4 +342,239 @@
   font-size: 18px;
 }
 
+.main__headshots-importance {
+  padding: 74px 0 100px;
+  background-color: #f6f6f6;
+}
+
+.headshots-importance__wrapper {
+  position: relative;
+}
+.headshots-importance__arrow {
+  position: absolute;
+  top: 326px;
+  left: 10px;
+}
+.headshots-importance__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.importance-explaining__title {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.importance-explaining__text {
+  max-width: 620px;
+  font-size: 18px;
+  line-height: 1.78;
+}
+.importance-tips__title {
+  margin-bottom: 70px;
+  font-family: "Dancing Script", cursive;
+  font-size: 60px;
+  font-weight: 700;
+  font-style: italic;
+}
+.importance-tips__title-num {
+  font-family: "Dancing Script", cursive;
+  font-size: 75px;
+  font-weight: 700;
+  font-style: italic;
+}
+.importance-tips__inner {
+  display: grid;
+  grid-template-columns: 350px 300px;
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 90px;
+  row-gap: 70px;
+  align-items: start;
+}
+.importance-tips__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  line-height: 24px;
+}
+.importance-tips__item:nth-of-type(2) {
+  grid-row: 2/4;
+}
+.importance-tips__item:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #222;
+  opacity: 0.2;
+  position: absolute;
+  top: calc(100% + 20px);
+  margin-bottom: 20px;
+}
+.importance-tips__icon {
+  position: absolute;
+}
+.importance-tips__text {
+  line-height: 1.5;
+}
+.importance-tips__text--first-col {
+  padding-left: 110px;
+}
+.importance-tips__text--second-col {
+  padding-left: 80px;
+}
+
+.headshot-importance__services {
+  margin: 22px 0 0 113px;
+}
+
+.headshot-services {
+  color: white;
+  max-width: 1070px;
+  padding: 55px 82px 61px 79px;
+  background-color: #222222;
+}
+.headshot-services__title {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 600;
+}
+.headshot-services__paragraph {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 300;
+}
+.headshot-services__paragraph--covid-update {
+  margin-top: 40px;
+}
+
+.main__clients {
+  padding: 99px 0 210px;
+  background-color: #222;
+}
+
+.clients {
+  color: white;
+  text-align: center;
+}
+.clients__title {
+  font-size: 50px;
+  line-height: 55px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.clients__subtitle {
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 55px;
+}
+
+.reviews-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.review__author {
+  font-size: 16px;
+  line-height: 28px;
+}
+.review__mark {
+  display: flex;
+}
+.review__star {
+  display: block;
+}
+.review__star:not(:last-child) {
+  margin-right: 3px;
+}
+.review__quotes {
+  font-family: "Catamaran", sans-serif;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  font-size: 220px;
+  color: rgba(255, 254, 254, 0.1);
+}
+.review__text {
+  margin-top: 35px;
+  padding-left: 45px;
+  text-align: left;
+  position: relative;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.blog {
+  padding: 90px 0 120px;
+  text-align: center;
+}
+.blog__title {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 55px;
+}
+.blog__subtitle {
+  margin-bottom: 65px;
+  font-size: 18px;
+  line-height: 32px;
+}
+.blog__inner {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+.blog__item-img {
+  display: block;
+}
+.blog__item-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: left;
+}
+.blog__item-description {
+  position: relative;
+  height: 200px;
+  background-color: #f6f6f6;
+  padding: 30px 21px 30px 25px;
+}
+.blog__item-info {
+  position: absolute;
+  left: 30px;
+  right: 21px;
+  bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog__item-comments {
+  position: relative;
+  font-size: 16px;
+}
+.blog__message-icon {
+  display: block;
+  position: absolute;
+}
+.blog__comments-quantity {
+  padding-left: 30px;
+  color: #ff3c2d;
+}
+.blog__date {
+  color: #ababab;
+}
+.blog__button {
+  margin-top: 60px;
+  width: 215px;
+  height: 45px;
+  font-size: 18px;
+}
+
 /*# sourceMappingURL=style.css.map */
