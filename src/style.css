@@ -577,4 +577,127 @@
   font-size: 18px;
 }
 
+.footer {
+  color: white;
+  background-color: #222;
+}
+.footer__inner {
+  padding-top: 90px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__item--left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+.footer__item--center-column {
+  display: grid;
+  grid-template-columns: 340px 425px;
+  row-gap: 55px;
+}
+.footer__item--right-column {
+  align-self: flex-end;
+}
+.footer__list--right-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.footer__list-item {
+  list-style-type: none;
+}
+.footer__list-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.footer__list-item--right-column {
+  position: relative;
+}
+.footer__list-item--right-column:not(:last-child):after {
+  position: absolute;
+  bottom: -8px;
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #656565;
+  opacity: 0.5;
+}
+.footer__list-link {
+  color: white;
+  text-decoration: none;
+}
+.footer__title {
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: 32px;
+  color: #626262;
+}
+.footer__title--address {
+  margin-bottom: 27px;
+}
+.footer__studio-address {
+  align-self: flex-end;
+}
+.footer__address-text {
+  position: relative;
+  padding-left: 30px;
+  line-height: 32px;
+}
+.footer__location-icon {
+  left: 0;
+  display: block;
+  position: absolute;
+}
+.footer__contacts {
+  position: relative;
+}
+.footer__contacts-inner {
+  font-size: 30px;
+  line-height: 52px;
+}
+.footer__contacts-link {
+  text-decoration: none;
+  color: white;
+}
+.footer__contacts:after {
+  position: absolute;
+  display: block;
+  content: "";
+  height: 1px;
+  bottom: 7px;
+  width: 100%;
+  background-color: #ff3c2d;
+}
+.footer__copyrights {
+  position: relative;
+  padding: 25px 0;
+}
+.footer__hr {
+  border-color: white;
+  opacity: 0.1;
+}
+.footer__resources-icon {
+  display: inline-block;
+  margin-right: 7px;
+}
+
+.copyrights {
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.2);
+}
+.copyrights__policy {
+  position: absolute;
+  top: 25px;
+  right: 0;
+}
+.copyrights__policy-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.2);
+}
+
 /*# sourceMappingURL=style.css.map */
