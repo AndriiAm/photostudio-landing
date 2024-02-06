@@ -1,3 +1,8 @@
+.swiper {
+  width: 730px;
+  height: 800px;
+}
+
 .main__services {
   padding: 120px 0 150px;
 }
@@ -26,10 +31,7 @@
         background-color: #ff3c2d;
         transition: width 0.3s linear;
       }
-      &:hover {
-        .main__services {
-          background-color: #222222;
-        }
+      &:hover, .services__menu-item--default {
         &:after {
           width: 50%;
         }
@@ -41,7 +43,7 @@
       font-size: 18px;
       color: #ababab;
       text-decoration: none;
-      &:hover {
+      &:hover, .services__menu-link--default {
         color: #222222;
         transition: color 0.3s linear;
       }
@@ -52,8 +54,8 @@
     display: flex;
   }
   &__slider {
+
     &-wrapper {
-      padding-right: 30px;
     }
     &-inner {
       display: grid;
@@ -92,11 +94,17 @@
     width: 350px;
     height: 41px;
     background-color: #f6f6f6;
+    transition: background-color linear 0.3s ;
     &-img {
       display: block;
     }
+    &:hover {
+      background-color: #C9C9C9;
+    }
   }
 }
+
+
 
 .slider-capture {
   color: white;
@@ -106,6 +114,7 @@
     height: 25px;
     font-size: 12px;
     margin-bottom: 10px;
+
   }
   &__text {
     display: flex;
@@ -116,11 +125,27 @@
 }
 
 .big-example {
+  margin-left: 30px;
   height: 860px;
   width: 800px;
   &__img {
     display: block;
     width: 100%;
     height: 100%;
+
+  }
+}
+
+.animation {
+  animation-name: animation;
+  animation-duration: 1.5s;
+}
+
+@keyframes animation  {
+  from {
+    opacity: 0.75;
+  }
+  to {
+    opacity: 1;
   }
 }

@@ -1,6 +1,6 @@
 .header {
-  min-height: 100px;
   &__inner {
+    min-height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,9 +39,33 @@
   }
 }
 
+.link__wrapper {
+  height: 100%;
+}
+
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #ff3c2d;
   border: 1px solid #ff3c2d;
   border-radius: 3px;
   color: white;
+  transition: background-color linear 0.3s;
+  &__link {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    transition: color linear 0.3s;
+  }
+  &:hover:not(.slider-capture__button) {
+    background-color: #E5E5E5;
+    .button__link {
+      color: #ff3c2d;
+    }
+  }
 }

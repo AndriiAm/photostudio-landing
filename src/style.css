@@ -11,10 +11,8 @@
   margin: 0 auto;
 }
 
-.header {
-  min-height: 100px;
-}
 .header__inner {
+  min-height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,11 +50,35 @@
   margin-right: 20px;
 }
 
+.link__wrapper {
+  height: 100%;
+}
+
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #ff3c2d;
   border: 1px solid #ff3c2d;
   border-radius: 3px;
   color: white;
+  transition: background-color linear 0.3s;
+}
+.button__link {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  transition: color linear 0.3s;
+}
+.button:hover:not(.slider-capture__button) {
+  background-color: #E5E5E5;
+}
+.button:hover:not(.slider-capture__button) .button__link {
+  color: #ff3c2d;
 }
 
 .main__sessions-info {
@@ -101,7 +123,7 @@
   width: 215px;
   height: 45px;
   font-size: 16px;
-  margin-bottom: 100px;
+  margin: 0 auto 100px;
 }
 
 .session-list {
@@ -204,6 +226,11 @@
   height: 45px;
 }
 
+.swiper {
+  width: 730px;
+  height: 800px;
+}
+
 .main__services {
   padding: 120px 0 150px;
 }
@@ -231,10 +258,7 @@
   background-color: #ff3c2d;
   transition: width 0.3s linear;
 }
-.services__menu-item:hover .main__services {
-  background-color: #222222;
-}
-.services__menu-item:hover:after {
+.services__menu-item:hover:after, .services__menu-item .services__menu-item--default:after {
   width: 50%;
 }
 .services__menu-link {
@@ -244,16 +268,13 @@
   color: #ababab;
   text-decoration: none;
 }
-.services__menu-link:hover {
+.services__menu-link:hover, .services__menu-link .services__menu-link--default {
   color: #222222;
   transition: color 0.3s linear;
 }
 .services__examples-wrapper {
   margin-top: 20px;
   display: flex;
-}
-.services__slider-wrapper {
-  padding-right: 30px;
 }
 .services__slider-inner {
   display: grid;
@@ -289,9 +310,13 @@
   width: 350px;
   height: 41px;
   background-color: #f6f6f6;
+  transition: background-color linear 0.3s;
 }
 .services__arrow-img {
   display: block;
+}
+.services__arrow:hover {
+  background-color: #C9C9C9;
 }
 
 .slider-capture {
@@ -312,6 +337,7 @@
 }
 
 .big-example {
+  margin-left: 30px;
   height: 860px;
   width: 800px;
 }
@@ -321,6 +347,19 @@
   height: 100%;
 }
 
+.animation {
+  animation-name: animation;
+  animation-duration: 1.5s;
+}
+
+@keyframes animation {
+  from {
+    opacity: 0.75;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .headshots-sessions {
   height: 401px;
   background: url("images/background/cameras_bg.jpg") center center/cover no-repeat;
@@ -372,16 +411,12 @@
 }
 .importance-tips__title {
   margin-bottom: 70px;
-  font-family: "Dancing Script", cursive;
+  font-family: "Tahu!", sans-serif;
   font-size: 60px;
-  font-weight: 700;
-  font-style: italic;
 }
 .importance-tips__title-num {
-  font-family: "Dancing Script", cursive;
+  font-family: "Tahu!", sans-serif;
   font-size: 75px;
-  font-weight: 700;
-  font-style: italic;
 }
 .importance-tips__inner {
   display: grid;
@@ -510,6 +545,13 @@
   line-height: 32px;
 }
 
+#specialLink {
+  width: 120px;
+  height: 35px;
+  display: block;
+  margin-right: 70px;
+}
+
 .blog {
   padding: 90px 0 120px;
   text-align: center;
@@ -571,7 +613,7 @@
   color: #ababab;
 }
 .blog__button {
-  margin-top: 60px;
+  margin: 60px auto 0;
   width: 215px;
   height: 45px;
   font-size: 18px;

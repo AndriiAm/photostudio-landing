@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Catamaran&family=Dancing+Script:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -36,7 +38,11 @@
             </ul>
         </nav>
 
-        <button class="header__button button">Book Now</button>
+        <div class="header__button button">
+            <a class="button__link" href="#">
+                Book Now
+            </a>
+        </div>
 
         <ul class="header__social-media-wrapper">
             <li class="header__social-media-item">
@@ -67,9 +73,11 @@
             #1 Rated Headshot Photographers.
         </p>
 
-        <button class="headshots__button button">
-            Browse Sessions
-        </button>
+        <div class="headshots__button button">
+            <a class="button__link" href="#">
+                Browse Sessions
+            </a>
+        </div>
     </section>
 
     <section class="main__sessions-info sessions-info">
@@ -115,7 +123,11 @@
                     </div>
                 </div>
 
-                <button class="sessions-info__button button">See More</button>
+                <div class="sessions-info__button button">
+                    <a class="button__link" href="#">
+                        See More
+                    </a>
+                </div>
             </div>
 
         </div>
@@ -152,7 +164,11 @@
                     </div>
                 </div>
 
-                <a href=""><button class="sessions-info__button button">See More</button></a>
+                <div class="sessions-info__button button">
+                    <a class="button__link" href="#">
+                        See More
+                    </a>
+                </div>
 
             </div>
 
@@ -177,7 +193,11 @@
                 <div class="searching-studio__inputs-wrapper">
                     <input id="search_studio_input" type="text" class="searching-studio__input">
 
-                    <button class="searching-studio__button button">Search</button>
+                    <div class="searching-studio__button button">
+                        <a class="button__link" href="#">
+                            Search
+                        </a>
+                    </div>
                 </div>
             </form>
         </div>
@@ -190,7 +210,7 @@
 
         <div class="services__menu">
             <ul class="services__menu-list">
-                <li class="services__menu-item services__menu-item--active">
+                <li class="services__menu-item services__menu-item--default">
                     <a class="services__menu-link" href="#">
                         All
                     </a>
@@ -247,87 +267,156 @@
         </div>
 
         <div class="services__examples-wrapper container">
-                <div class="services__block services__slider-wrapper">
+                <div class="services__block">
+                    <div class="swiper services__slider">
+                        <div class="swiper-wrapper services__slider-wrapper">
+                            <div class="swiper-slide services__slider-inner">
+                                <div class="services__slider-item">
+                                    <div class="services__slider-capture slider-capture">
+                                        <div class="slider-capture__button button">
+                                            MODELING
+                                        </div>
 
-                    <div class="services__slider-inner">
-                        <div class="services__slider-item">
-                            <div class="services__slider-capture slider-capture">
-                                <button class="slider-capture__button button">
-                                    COMPANY
-                                </button>
+                                        <p class="slider-capture__text">
+                                            Check Service
 
-                                <p class="slider-capture__text">
-                                    Check Service
+                                            <img src="images/services/white_arrow_right.png" alt="" class="slider-capture__arrow">
+                                        </p>
+                                    </div>
 
-                                    <img src="images/services/white_arrow_right.png" alt="" class="slider-capture__arrow">
-                                </p>
+                                    <img class="services__slider-img" src="images/services/1.png" alt="example service">
+                                </div>
+
+                                <div class="services__slider-item">
+                                    <div class="services__slider-capture slider-capture">
+                                        <div class="slider-capture__button button">
+                                            ACTING
+                                        </div>
+
+                                        <p class="slider-capture__text">
+                                            Check Service
+
+                                            <img src="images/services/white_arrow_right.png" alt="" class="slider-capture__arrow">
+                                        </p>
+                                    </div>
+
+                                    <img class="services__slider-img" src="images/services/2.png" alt="example service">
+                                </div>
+
+                                <div class="services__slider-item">
+                                    <div class="services__slider-capture slider-capture">
+                                        <div class="slider-capture__button button">
+                                            CORPORATE
+                                        </div>
+
+                                        <p class="slider-capture__text">
+                                            Check Service
+
+                                            <img src="images/services/white_arrow_right.png" alt="" class="slider-capture__arrow">
+                                        </p>
+                                    </div>
+
+                                    <img class="services__slider-img" src="images/services/3.png" alt="example service">
+                                </div>
+
+                                <div class="services__slider-item">
+                                    <div class="services__slider-capture slider-capture">
+                                        <div class="slider-capture__button button">
+                                            BUSINESS
+                                        </div>
+
+                                        <p class="slider-capture__text">
+                                            Check Service
+
+                                            <img src="images/services/white_arrow_right.png" alt="" class="slider-capture__arrow">
+                                        </p>
+                                    </div>
+
+                                    <img class="services__slider-img" src="images/services/4.png" alt="example service">
+                                </div>
                             </div>
 
-                            <img class="services__slider-img" src="images/services/1.png" alt="example service">
-                        </div>
+                            <div class="swiper-slide services__slider-inner">
+                                <div class="services__slider-item">
+                                    <div class="services__slider-capture slider-capture">
+                                        <div class="slider-capture__button button">
+                                            PROFESSIONAL
+                                        </div>
 
-                        <div class="services__slider-item">
-                            <div class="services__slider-capture slider-capture">
-                                <button class="slider-capture__button button">
-                                    COMPANY
-                                </button>
+                                        <p class="slider-capture__text">
+                                            Check Service
 
-                                <p class="slider-capture__text">
-                                    Check Service
+                                            <img src="images/services/white_arrow_right.png" alt="" class="slider-capture__arrow">
+                                        </p>
+                                    </div>
 
-                                    <img src="images/services/white_arrow_right.png" alt="" class="slider-capture__arrow">
-                                </p>
+                                    <img class="services__slider-img" src="images/services/5.png" alt="example service">
+                                </div>
+
+                                <div class="services__slider-item">
+                                    <div class="services__slider-capture slider-capture">
+                                        <div class="slider-capture__button button">
+                                            GROUP
+                                        </div>
+
+                                        <p class="slider-capture__text">
+                                            Check Service
+
+                                            <img src="images/services/white_arrow_right.png" alt="" class="slider-capture__arrow">
+                                        </p>
+                                    </div>
+
+                                    <img class="services__slider-img" src="images/services/6.png" alt="example service">
+                                </div>
+
+                                <div class="services__slider-item">
+                                    <div class="services__slider-capture slider-capture">
+                                        <div class="slider-capture__button button">
+                                            COMPANY
+                                        </div>
+
+                                        <p class="slider-capture__text">
+                                            Check Service
+
+                                            <img src="images/services/white_arrow_right.png" alt="" class="slider-capture__arrow">
+                                        </p>
+                                    </div>
+
+                                    <img class="services__slider-img" src="images/services/7.png" alt="example service">
+                                </div>
+
+                                <div class="services__slider-item">
+                                    <div class="services__slider-capture slider-capture">
+                                        <div class="slider-capture__button button">
+                                            OFFICER
+                                        </div>
+
+                                        <p class="slider-capture__text">
+                                            Check Service
+
+                                            <img src="images/services/white_arrow_right.png" alt="" class="slider-capture__arrow">
+                                        </p>
+                                    </div>
+
+                                    <img class="services__slider-img" src="images/services/8.png" alt="example service">
+                                </div>
                             </div>
-
-                            <img class="services__slider-img" src="images/services/2.png" alt="example service">
-                        </div>
-
-                        <div class="services__slider-item">
-                            <div class="services__slider-capture slider-capture">
-                                <button class="slider-capture__button button">
-                                    COMPANY
-                                </button>
-
-                                <p class="slider-capture__text">
-                                    Check Service
-
-                                    <img src="images/services/white_arrow_right.png" alt="" class="slider-capture__arrow">
-                                </p>
-                            </div>
-
-                            <img class="services__slider-img" src="images/services/3.png" alt="example service">
-                        </div>
-
-                        <div class="services__slider-item">
-                            <div class="services__slider-capture slider-capture">
-                                <button class="slider-capture__button button">
-                                    COMPANY
-                                </button>
-
-                                <p class="slider-capture__text">
-                                    Check Service
-
-                                    <img src="images/services/white_arrow_right.png" alt="" class="slider-capture__arrow">
-                                </p>
-                            </div>
-
-                            <img class="services__slider-img" src="images/services/4.png" alt="example service">
                         </div>
                     </div>
 
                     <div class="services__slider-arrows-wrapper">
-                        <div class="services__arrow">
+                        <div class="services__arrow swiper-button-prev-unique">
                             <img src="images/services/black_arrow_left.png" alt="left arrow" class="services__arrow-img">
                         </div>
 
-                        <div class="services__arrow">
+                        <div class="services__arrow swiper-button-next-unique">
                             <img src="images/services/black_arrow_right.png" alt="right arrow" class="services__arrow-img">
                         </div>
                     </div>
                 </div>
 
                 <div class="services__block big-example">
-                    <img class="big-example__img" src="images/services/1.png" alt="big example">
+                    <img class="big-example__img animation" src="images/services/1.png" alt="big example">
                 </div>
             </div>
     </section>
@@ -351,9 +440,9 @@
                 </div>
 
                 <div class="headshots-importance__block importance-tips">
-                    <h2 class="importance-tips__title">
+                    <p class="importance-tips__title">
                         <span class="importance-tips__title-num">5</span> Useful Tips
-                    </h2>
+                    </p>
 
                     <div class="importance-tips__inner">
                         <div class="importance-tips__item">
@@ -529,9 +618,11 @@
                 professional headshot sessions.
             </h3>
 
-            <button class="headshots-sessions__button button">
-                About Us
-            </button>
+            <div class="headshots-sessions__button button">
+                <a class="button__link" href="#">
+                    See More
+                </a>
+            </div>
         </div>
     </section>
 
@@ -621,9 +712,11 @@
             </div>
         </div>
 
-        <button class="blog__button button">
-            See All Posts
-        </button>
+        <div class="blog__button button">
+            <a class="button__link" href="#">
+                See All Posts
+            </a>
+        </div>
     </section>
 </main>
 
@@ -801,6 +894,7 @@
 <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
 ({key: "AIzaSyCjtg6kqOveOX9L3BIngKPUTHKqkKUUDaA", v: "beta"});</script>
 <script src="https://kit.fontawesome.com/f0af0ccce5.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
