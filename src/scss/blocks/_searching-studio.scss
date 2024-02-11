@@ -1,18 +1,29 @@
+.container-studio {
+  position: relative;
+}
 .searching-studio {
+  height: 560px;
   position: relative;
   &__map-wrapper {
-    height: 560px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+
   }
   &__map {
     height: 100%;
   }
+
   &__inner {
-    width: 700px;
+    width: 44%;
     height: 250px;
     padding: 40px 50px 45px;
     position: absolute;
     top: 160px;
-    left: 180px;
+    left: 15px;
+    z-index: 2;
     background-color: white;
   }
   &__title {

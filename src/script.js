@@ -24,11 +24,6 @@ async function initMap() {
     });
 
     // The marker, positioned at Uluru
-    const marker = new AdvancedMarkerView({
-        map: map,
-        position: position,
-        title: "Uluru",
-    });
 }
 
 initMap();

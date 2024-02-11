@@ -25,6 +25,13 @@
 }
 
 .review {
+  &__item {
+    max-width: 490px;
+  }
+  &__img {
+    display: block;
+    max-width: 100%;
+  }
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -60,11 +67,4 @@
     font-size: 18px;
     line-height: 32px;
   }
-}
-
-#specialLink {
-  width: 120px;
-  height: 35px;
-  display: block;
-  margin-right: 70px;
 }

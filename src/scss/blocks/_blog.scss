@@ -18,8 +18,10 @@
     justify-content: space-between;
   }
   &__item{
+    max-width: 386px;
     &-img {
       display: block;
+      max-width: 100%;
     }
     &-title {
       font-size: 20px;
@@ -33,6 +35,7 @@
       height: 200px;
       background-color: #f6f6f6;
       padding: 30px 21px 30px 25px;
+      max-width: 100%;
     }
     &-info {
       position: absolute;

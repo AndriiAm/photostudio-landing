@@ -1,0 +1,241 @@
+@media (max-width: 1600px) {
+  .container {
+    max-width: 1310px;
+    padding: 0 15px;
+  }
+  .header {
+    &__menu {
+      margin-left: 100px;
+    }
+  }
+  .swiper {
+    height: 645px;
+    width: 590px;
+  }
+  .services {
+    &__slider {
+      &-inner {
+        grid-template-rows: repeat(2, 310px);
+        gap: 25px;
+      }
+
+    }
+    &__arrow {
+      width: 285px;
+    }
+  }
+  .slider {
+    &-capture {
+      top: 240px;
+    }
+  }
+  .big-example {
+    height: 705px;
+  }
+  .importance {
+    &-explaining {
+      &__text {
+        max-width: 540px;
+        font-size: 16px;
+      }
+    }
+    &-tips {
+      &__inner {
+        grid-template-columns: 320px 280px;
+        column-gap: 50px;
+      }
+      &__text {
+        &--first-col {
+          padding-left: 90px;
+        }
+        &--second-col {
+          padding-left: 60px;
+        }
+      }
+    }
+  }
+  .headshots-importance{
+    &__services {
+      margin-top: 70px;
+    }
+
+    &__arrow {
+      height: 200px;
+      left: 0;
+    }
+  }
+  .main__clients {
+    padding-bottom: 150px;
+  }
+  .review {
+    &__item {
+      max-width: 405px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+  }
+  .footer {
+    &__item--center-column {
+      grid-template-columns: 320px 425px;
+    }
+    &__contacts-inner {
+      font-size: 26px;
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .header {
+    &__menu {
+      margin-left: 50px;
+      &-link {
+        padding: 0 13px;
+      }
+    }
+    &__button {
+      margin-right: 50px;
+    }
+  }
+
+}
+
+@media (max-width: 1365px) {
+  .container {
+    max-width: 1024px;
+    padding: 0 25px;
+  }
+  .header {
+    &__inner {
+      padding: 0 20px;
+    }
+    &__menu {
+      margin-left: 20px;
+      &-link {
+        padding: 0 10px;
+      }
+    }
+    &__button {
+      margin-right: 30px;
+    }
+  }
+  .searching-studio__inner {
+    width: 500px;
+    left: 25px;
+  }
+  .swiper {
+    height: 490px;
+    width: 450px;
+  }
+  .services {
+    &__slider {
+      &-inner {
+        grid-template-rows: repeat(2, 235px);
+        gap: 20px;
+
+      }
+      &-arrows-wrapper {
+        margin-top: 14px;
+      }
+    }
+    &__arrow {
+      width: 215px;
+    }
+  }
+  .slider {
+    &-capture {
+      top: 170px;
+      left: 15px;
+      font-size: 16px;
+      &__button {
+        margin-bottom: 7px;
+      }
+      &__arrow {
+        margin-left: 10px;
+      }
+    }
+  }
+  .big-example {
+    height: 545px;
+  }
+  .headshots-importance {
+    &__wrapper {
+      position: relative;
+    }
+    &__arrow {
+      display: none;
+    }
+    &__services {
+      top: 280px;
+      left: 25px;
+      position: absolute;
+    }
+  }
+  .importance {
+    &-tips {
+      &__inner {
+        grid-template-columns: 325px;
+      }
+      &__item {
+        &:nth-of-type(2) {
+          grid-row: 2/3;
+        }
+      }
+    }
+  }
+  .headshots-services {
+    margin: 0;
+    max-width: 540px;
+    padding: 35px 30px 35px 40px ;
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__paragraph {
+      line-height: 26px;
+      &--covid-update {
+        margin-top: 15px;
+      }
+    }
+  }
+  .review {
+    &__item {
+      max-width: 300px;
+    }
+    &__text {
+      padding-left: 20px;
+    }
+  }
+  .blog {
+    &__inner {
+      max-width: 960px;
+    }
+    &__item {
+      max-width: 310px;
+      &-title {
+        font-size: 16px;
+        line-height: 24px;
+      }
+      &-description {
+        padding: 20px 15px 30px 20px;
+      }
+      &-info {
+        left: 20px;
+        right: 15px;
+      }
+    }
+
+
+  }
+  .footer {
+    &__item {
+      &--center-column {
+        grid-template-columns: repeat(3, auto);
+        gap: 30px;
+      }
+    }
+    &__contacts-inner {
+      font-size: 22px;
+    }
+  }
+
+}

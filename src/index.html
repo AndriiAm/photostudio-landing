@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <meta name="viewport" content="width=device-width">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Catamaran&family=Dancing+Script:wght@400;500;600&display=swap" rel="stylesheet">
@@ -38,24 +39,39 @@
             </ul>
         </nav>
 
-        <div class="header__button button">
-            <a class="button__link" href="#">
-                Book Now
-            </a>
+        <div class="header__button-wrapper">
+            <div class="header__button button">
+                <a class="button__link" href="#">
+                    Book Now
+                </a>
+            </div>
         </div>
 
         <ul class="header__social-media-wrapper">
             <li class="header__social-media-item">
-                <i class="fa-brands fa-facebook-f"></i>
+                <a href="#" class="header__social-media-link">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
             </li>
             <li class="header__social-media-item">
-                <i class="fa-brands fa-instagram"></i>
+                <a href="#" class="header__social-media-link">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
             </li>
             <li class="header__social-media-item">
-                <i class="fa-brands fa-linkedin-in"></i>
+                <a href="#" class="header__social-media-link">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
             </li>
             <li class="header__social-media-item">
-                <i class="fa-brands fa-google"></i>
+                <a href="#" class="header__social-media-link">
+                    <i class="fa-brands fa-google"></i>
+                </a>
+            </li>
+            <li class="header__social-media-item">
+                <a href="#" class="header__social-media-link">
+                    <i class="fa-brands fa-yelp"></i>
+                </a>
             </li>
         </ul>
     </div>
@@ -63,20 +79,22 @@
 
 <main class="main">
     <section class="main__headshots headshots">
-        <h1 class="headshots__title">
-            Fast. Simple. <br>
-            Professional <br>
-            Headshots.
-        </h1>
+        <div class="container">
+            <h1 class="headshots__title">
+                Fast. Simple. <br>
+                Professional <br>
+                Headshots.
+            </h1>
 
-        <p class="headshots__subtitle">
-            #1 Rated Headshot Photographers.
-        </p>
+            <p class="headshots__subtitle">
+                #1 Rated Headshot Photographers.
+            </p>
 
-        <div class="headshots__button button">
-            <a class="button__link" href="#">
-                Browse Sessions
-            </a>
+            <div class="headshots__button button">
+                <a class="button__link" href="#">
+                    Browse Sessions
+                </a>
+            </div>
         </div>
     </section>
 
@@ -176,30 +194,32 @@
     </section>
 
     <section class="main__searching-studio searching-studio">
-        <div class="searching-studio__map-wrapper">
-            <div class="searching-studio__map"></div>
+        <div class="container-studio container">
+            <div class="searching-studio__inner">
+                <h2 class="searching-studio__title">
+                    Studio Near Me
+                </h2>
+
+                <form action="" class="searching-studio__form">
+                    <label for="search_studio_input" class="searching-studio__label">
+                        Search for your professional by zip code:
+                    </label>
+
+                    <div class="searching-studio__inputs-wrapper">
+                        <input id="search_studio_input" type="text" class="searching-studio__input">
+
+                        <div class="searching-studio__button button">
+                            <a class="button__link" href="#">
+                                Search
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
 
-        <div class="searching-studio__inner">
-            <h2 class="searching-studio__title">
-                Studio Near Me
-            </h2>
-
-            <form action="" class="searching-studio__form">
-                <label for="search_studio_input" class="searching-studio__label">
-                    Search for your professional by zip code:
-                </label>
-
-                <div class="searching-studio__inputs-wrapper">
-                    <input id="search_studio_input" type="text" class="searching-studio__input">
-
-                    <div class="searching-studio__button button">
-                        <a class="button__link" href="#">
-                            Search
-                        </a>
-                    </div>
-                </div>
-            </form>
+        <div class="searching-studio__map-wrapper">
+            <div class="searching-studio__map"></div>
         </div>
     </section>
 
@@ -267,7 +287,7 @@
         </div>
 
         <div class="services__examples-wrapper container">
-                <div class="services__block">
+                <div class="services__block examples-wrapper">
                     <div class="swiper services__slider">
                         <div class="swiper-wrapper services__slider-wrapper">
                             <div class="swiper-slide services__slider-inner">
@@ -421,7 +441,7 @@
             </div>
     </section>
 
-    <section class="main__headshots-importance headshot-importance">
+    <section class="main__headshots-importance headshots-importance">
         <div class="headshots-importance__wrapper container">
             <img src="images/icons/orange_arrow.png" alt="arrow" class="headshots-importance__arrow">
             <div class="headshots-importance__inner">
@@ -493,20 +513,20 @@
                 </div>
             </div>
 
-            <div class="headshot-importance__services headshot-services">
-                <p class="headshot-services__title">
+            <div class="headshots-importance__services headshots-services">
+                <p class="headshots-services__title">
                     Professional Headshot Services
                 </p>
 
-                <div class="headshot-services__text">
-                    <p class="headshot-services__paragraph">
+                <div class="headshots-services__text">
+                    <p class="headshots-services__paragraph">
                         Studio Inc is maecenas vulputate, sem at auctor vulputate, elit nunc sagittis ligula, vitae pulvinar
                         <br>
                         metus elit in ante. Aenean tincidunt erat ac ante placerat facilisis. Fusce sed ligula tortor.
                         Quisque non <br> dignissim erat. Vestibulum ante ipsum primis in faucibus.
                     </p>
 
-                    <p class="headshot-services__paragraph headshot-services__paragraph--covid-update">
+                    <p class="headshots-services__paragraph headshots-services__paragraph--covid-update">
                         Covid-19 Update: We are open for studio, office, and outdoor sessions. For more information <br>
                         on our safety procedures, visit Studio Covid-19 Guidelines.
                     </p>
@@ -548,7 +568,7 @@
                             "
                         </div>
 
-                        Studio is exactly what our business has been <br>
+                        Studio is exactly what our business has been
                         lacking. I will recommend them to everyone.
                     </div>
                 </div>
@@ -575,7 +595,7 @@
                             "
                         </div>
 
-                        Studio impressed me on multiple levels. <br>
+                        Studio impressed me on multiple levels.
                         Studio is worth much more than offered.
 
                     </div>
@@ -603,7 +623,7 @@
                             "
                         </div>
 
-                        Studio saved my job interview. Keep up with <br>
+                        Studio saved my job interview. Keep up with
                         the excellent work!
                     </div>
                 </div>
@@ -612,16 +632,18 @@
     </section>
 
     <section class="main__headshots-sessions headshots-sessions">
-        <div class="headshots-sessions__inner container">
-            <h3 class="headshots-sessions__title">
-                Fast, convenient & friendly<br>
-                professional headshot sessions.
-            </h3>
+        <div class="container">
+            <div class="headshots-sessions__inner">
+                <h3 class="headshots-sessions__title">
+                    Fast, convenient & friendly<br>
+                    professional headshot sessions.
+                </h3>
 
-            <div class="headshots-sessions__button button">
-                <a class="button__link" href="#">
-                    See More
-                </a>
+                <div class="headshots-sessions__button button">
+                    <a class="button__link" href="#">
+                        See More
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -641,7 +663,7 @@
 
                 <div class="blog__item-description">
                     <p class="blog__item-title">
-                        all about headshots inside <br>
+                        all about headshots inside
                         professional studios
                     </p>
 
@@ -667,9 +689,9 @@
 
                 <div class="blog__item-description">
                     <p class="blog__item-title">
-                        How do professionals edit <br>
-                        their photos and What photo <br>
-                        editing software they use <br>
+                        How do professionals edit
+                        their photos and What photo
+                        editing software they use
                     </p>
 
                     <div class="blog__item-info">
@@ -692,7 +714,7 @@
 
                 <div class="blog__item-description">
                     <p class="blog__item-title">
-                        best Courses In Photography <br>
+                        best Courses In Photography
                         from home
                     </p>
 
@@ -721,174 +743,180 @@
 </main>
 
 <footer class="footer">
-    <div class="footer__inner container">
-        <div class="footer__item footer__item--left-column">
-            <div class="footer__logo-wrapper">
-                <img src="images/logo/white_logo.png" alt="white logo" class="footer__logo">
-            </div>
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__item footer__item--left-column">
+                <div class="footer__logo-wrapper">
+                    <img src="images/logo/white_logo.png" alt="white logo" class="footer__logo">
+                </div>
 
-            <div class="footer__studio-address">
-                <p class="footer__title footer__title--address">
-                    Studio Inc
-                </p>
+                <div class="footer__studio-address">
+                    <p class="footer__title footer__title--address">
+                        Studio Inc
+                    </p>
 
-                <address class="footer__address-text">
-                    <img class="footer__location-icon" src="images/icons/location_icon.png" alt="location icon">
+                    <address class="footer__address-text">
+                        <img class="footer__location-icon" src="images/icons/location_icon.png" alt="location icon">
 
-                    125  Southern Way <br>
-                    EH23 1SZ <br>
-                    North Middleton, UK
-                </address>
-            </div>
-        </div>
-
-        <div class="footer__item footer__item--center-column">
-            <div class="footer__links">
-                <p class="footer__title">
-                    Links
-                </p>
-
-                <ul class="footer__list">
-                    <li class="footer__list-item">
-                        <a href="#" class="footer__list-link">
-                            Individuals
-                        </a>
-                    </li>
-
-                    <li class="footer__list-item">
-                        <a href="#" class="footer__list-link">
-                            Companies
-                        </a>
-                    </li>
-
-                    <li class="footer__list-item">
-                        <a href="#" class="footer__list-link">
-                            The Studio
-                        </a>
-                    </li>
-
-                    <li class="footer__list-item">
-                        <a href="#" class="footer__list-link">
-                            About Us
-                        </a>
-                    </li>
-
-                    <li class="footer__list-item">
-                        <a href="#" class="footer__list-link">
-                            Blog
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="footer__resources">
-                <p class="footer__title">
-                    Resources
-                </p>
-
-                <ul class="footer__list">
-                    <li class="footer__list-item">
-                        <img src="images/icons/footer_arrow.png" alt="" class="footer__resources-icon">
-
-                        <a href="#" class="footer__list-link">
-                            Lorem ipsum dolor sit amet, consectetur adipis.
-                        </a>
-                    </li>
-
-                    <li class="footer__list-item">
-                        <img src="images/icons/footer_arrow.png" alt="" class="footer__resources-icon">
-
-                        <a href="#" class="footer__list-link">
-                            Donec nisi enim, finibus non malesuada vitae.
-                        </a>
-                    </li>
-
-                    <li class="footer__list-item">
-                        <img src="images/icons/footer_arrow.png" alt="" class="footer__resources-icon">
-
-                        <a href="#" class="footer__list-link">
-                            Morbi id aliquet sem. Ut mattis diam sit amet.
-                        </a>
-                    </li>
-
-                    <li class="footer__list-item">
-                        <img src="images/icons/footer_arrow.png" alt="" class="footer__resources-icon">
-
-                        <a href="#" class="footer__list-link">
-                            Curabitur eu efficitur quam. Fusce interdum sem.
-                        </a>
-                    </li>
-
-                    <li class="footer__list-item">
-                        <img src="images/icons/footer_arrow.png" alt="" class="footer__resources-icon">
-
-                        <a href="#" class="footer__list-link">
-                            Lorem ipsum dolor sit amet, consectetur adipis.
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="footer__contacts">
-                <p class="footer__title">
-                    Contact
-                </p>
-
-                <div class="footer__contacts-inner">
-                    <a class="footer__contacts-link" href="tel:+1233453781">(123) 345 3781</a>
-                    <a class="footer__contacts-link" href="mailto:smile@studio-inc.com">smile@studio-inc.com</a>
+                        125  Southern Way <br>
+                        EH23 1SZ <br>
+                        North Middleton, UK
+                    </address>
                 </div>
             </div>
-        </div>
 
-        <div class="footer__item footer__item--right-column">
-            <ul class="footer__list footer__list--right-column">
-                <li class="footer__list-item footer__list-item--right-column">
-                    <a href="#" class="footer__list-link">
-                        Facebook
-                    </a>
-                </li>
+            <div class="footer__item footer__item--center-column">
+                <div class="footer__links">
+                    <p class="footer__title">
+                        Links
+                    </p>
 
-                <li class="footer__list-item footer__list-item--right-column">
-                    <a href="#" class="footer__list-link">
-                        Instagram
-                    </a>
-                </li>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">
+                                Individuals
+                            </a>
+                        </li>
 
-                <li class="footer__list-item footer__list-item--right-column">
-                    <a href="#" class="footer__list-link">
-                        Linkedin
-                    </a>
-                </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">
+                                Companies
+                            </a>
+                        </li>
 
-                <li class="footer__list-item footer__list-item--right-column">
-                    <a href="#" class="footer__list-link">
-                        Google Rating
-                    </a>
-                </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">
+                                The Studio
+                            </a>
+                        </li>
 
-                <li class="footer__list-item footer__list-item--right-column">
-                    <a href="#" class="footer__list-link">
-                        Yelp
-                    </a>
-                </li>
-            </ul>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__resources">
+                    <p class="footer__title">
+                        Resources
+                    </p>
+
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <img src="images/icons/footer_arrow.png" alt="" class="footer__resources-icon">
+
+                            <a href="#" class="footer__list-link">
+                                Lorem ipsum dolor sit amet, consectetur adipis.
+                            </a>
+                        </li>
+
+                        <li class="footer__list-item">
+                            <img src="images/icons/footer_arrow.png" alt="" class="footer__resources-icon">
+
+                            <a href="#" class="footer__list-link">
+                                Donec nisi enim, finibus non malesuada vitae.
+                            </a>
+                        </li>
+
+                        <li class="footer__list-item">
+                            <img src="images/icons/footer_arrow.png" alt="" class="footer__resources-icon">
+
+                            <a href="#" class="footer__list-link">
+                                Morbi id aliquet sem. Ut mattis diam sit amet.
+                            </a>
+                        </li>
+
+                        <li class="footer__list-item">
+                            <img src="images/icons/footer_arrow.png" alt="" class="footer__resources-icon">
+
+                            <a href="#" class="footer__list-link">
+                                Curabitur eu efficitur quam. Fusce interdum sem.
+                            </a>
+                        </li>
+
+                        <li class="footer__list-item">
+                            <img src="images/icons/footer_arrow.png" alt="" class="footer__resources-icon">
+
+                            <a href="#" class="footer__list-link">
+                                Lorem ipsum dolor sit amet, consectetur adipis.
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__contacts">
+                    <p class="footer__title">
+                        Contact
+                    </p>
+
+                    <div class="footer__contacts-inner">
+                        <a class="footer__contacts-link" href="tel:+1233453781">(123) 345 3781</a> <br>
+                        <a class="footer__contacts-link" href="mailto:smile@studio-inc.com">smile@studio-inc.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__item footer__item--right-column">
+                <ul class="footer__list footer__list--right-column">
+                    <li class="footer__list-item footer__list-item--right-column">
+                        <a href="#" class="footer__list-link">
+                            Facebook
+                        </a>
+                    </li>
+
+                    <li class="footer__list-item footer__list-item--right-column">
+                        <a href="#" class="footer__list-link">
+                            Instagram
+                        </a>
+                    </li>
+
+                    <li class="footer__list-item footer__list-item--right-column">
+                        <a href="#" class="footer__list-link">
+                            Linkedin
+                        </a>
+                    </li>
+
+                    <li class="footer__list-item footer__list-item--right-column">
+                        <a href="#" class="footer__list-link">
+                            Google Rating
+                        </a>
+                    </li>
+
+                    <li class="footer__list-item footer__list-item--right-column">
+                        <a href="#" class="footer__list-link">
+                            Yelp
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 
     <hr class="footer__hr">
 
-    <div class="footer__copyrights copyrights container">
-        <div class="copyrights__rights">
-            © 2020. All rights reserved.
-        </div>
+    <div class="container">
+        <div class="footer__copyrights copyrights">
+            <div class="copyrights__rights">
+                © 2020. All rights reserved.
+            </div>
 
-        <div class="copyrights__policy">
-            <a href="#" class="copyrights__policy-link">
-                Privacy Policy
-            </a>
+            <div class="copyrights__policy">
+                <a href="#" class="copyrights__policy-link">
+                    Privacy Policy
+                </a>
+            </div>
         </div>
     </div>
+
+
 </footer>
 
 <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})

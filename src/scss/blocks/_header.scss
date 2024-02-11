@@ -8,35 +8,50 @@
   }
   &__menu{
     flex: 1 1 auto;
-    margin-left: 156px;
+    margin-left: 135px;
     &-list {
       display: flex;
+      align-items: center;
     }
     &-item {
       list-style-type: none;
-      padding: 0 20px;
       font-weight: 500;
     }
     &-link {
-        color: #222;
-        text-decoration: none;
+      display: block;
+      padding: 0 20px;
+      line-height: 35px;
+      color: #222;
+      text-decoration: none;
+      transition: all linear 0.3s;
+      &:hover {
+        background-color: #C9C9C9;
+      }
     }
   }
   &__button{
     margin-right: 70px;
     width: 120px;
     height: 35px;
+
   }
-  &__social-media-wrapper {
-    display: flex;
-  }
-  &__social-media-item {
+  &__social-media {
+    &-wrapper {
+      display: flex;
+    }
+    &-item {
       list-style-type: none;
       font-size: 16px;
-  }
-  &__social-media-item:not(:last-child) {
+    }
+    &-item:not(:last-child) {
       margin-right: 20px;
+    }
+    &-link {
+      color: #222222;
+    }
   }
+
+
 }
 
 .link__wrapper {
