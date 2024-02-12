@@ -828,6 +828,9 @@
   .footer__contacts-inner {
     font-size: 26px;
   }
+  .footer__contacts:after {
+    width: 295px;
+  }
 }
 @media (max-width: 1366px) {
   .header__menu {
@@ -944,11 +947,19 @@
     right: 15px;
   }
   .footer__item--center-column {
-    grid-template-columns: repeat(3, auto);
-    gap: 30px;
+    grid-template-columns: 135px 420px;
+  }
+  .footer__resources-icon {
+    margin-right: 3px;
+  }
+  .footer__contacts {
+    grid-column: 1/3;
   }
   .footer__contacts-inner {
     font-size: 22px;
+  }
+  .footer__contacts:after {
+    width: 250px;
   }
 }
 
