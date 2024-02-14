@@ -1,10 +1,3 @@
-
-var element = document.querySelectorAll(".session-list__number")[4]
-
-// Отримати ширину елемента
-var width = element.offsetWidth;
-console.log(width)
-
 // Initialize and add the map
 let map;
 
