@@ -936,11 +936,11 @@
     max-width: 310px;
   }
   .blog__item-title {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 24px;
   }
   .blog__item-description {
-    padding: 20px 15px 30px 20px;
+    padding: 30px 15px 30px 20px;
   }
   .blog__item-info {
     left: 20px;
@@ -997,15 +997,81 @@
   .searching-studio__button {
     width: 140px;
   }
-  .main__headshots-importance {
-    padding-bottom: 350px;
+  .importance-explaining__title {
+    text-align: center;
   }
   .importance-explaining__text {
-    max-width: 350px;
+    max-width: 550px;
+    text-align: justify;
+  }
+  .importance-tips__title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+  .importance-tips__inner {
+    grid-template-columns: 350px 300px;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .importance-tips__item:nth-of-type(2) {
+    grid-row: 2/4;
+  }
+  .headshots-importance__inner {
+    flex-direction: column;
+    align-items: center;
   }
   .headshots-importance__services {
-    top: 415px;
-    max-width: 350px;
+    max-width: 718px;
+    position: static;
+    margin: 80px auto 0;
+  }
+  .main__clients {
+    padding-bottom: 110px;
+  }
+  .reviews-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .review__item {
+    max-width: 490px;
+  }
+  .review__item:not(:last-child) {
+    margin-bottom: 60px;
+  }
+  .review__inner {
+    margin-top: 15px;
+  }
+  .review__text {
+    margin-top: 15px;
+  }
+  .headshots-sessions {
+    height: 350px;
+  }
+  .headshots-sessions__inner {
+    padding-top: 100px;
+    flex-direction: column;
+  }
+  .headshots-sessions__title {
+    font-size: 40px;
+  }
+  .headshots-sessions__button {
+    margin-top: 40px;
+  }
+  .blog {
+    padding: 60px 0;
+  }
+  .blog__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog__subtitle {
+    margin-bottom: 40px;
+  }
+  .blog__item {
+    max-width: 386px;
+  }
+  .blog__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
