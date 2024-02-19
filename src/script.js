@@ -71,3 +71,34 @@ sliderItems.forEach(item => {
         item.addEventListener("mouseleave", removeTimeout);
     })
 })
+
+let screenWidth = window.innerWidth;
+
+const links = document.querySelectorAll(".footer__list-link--short");
+
+if (screenWidth < 768 && screenWidth >= 480) {
+    links.forEach((item, i) => {
+        if (item.innerText.length > 25) {
+            item.innerText = item.innerText.slice(0, 25) + "...";
+        }
+    })
+}
+
+const listTriggers = document.querySelectorAll(".list-trigger");
+const dropdownLists = document.querySelectorAll(".dropdown-list");
+
+listTriggers.forEach((trigger, i) => {
+    trigger.addEventListener("click", (e) => {
+        listTriggers.forEach((item, i) => {
+            if (item == e.target) {
+                dropdownLists[i].classList.toggle("show");
+
+                if (dropdownLists[i].classList.contains('show')) {
+                    dropdownLists[i].style.maxHeight = dropdownLists[i].scrollHeight + "px";
+                } else {
+                    dropdownLists[i].style.maxHeight = null;
+                }
+            }
+        })
+    })
+})

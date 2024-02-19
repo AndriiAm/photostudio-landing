@@ -17,7 +17,7 @@
     }
     &--center-column {
       display: grid;
-      grid-template-columns: 340px 425px;
+      grid-template-columns: 340px auto;
       row-gap: 55px;
     }
     &--right-column {
@@ -93,7 +93,7 @@
       display: block;
       content: "";
       height: 1px;
-      bottom: 7px;
+      bottom: 0;
       width: 100%;
       background-color: #ff3c2d;
     }

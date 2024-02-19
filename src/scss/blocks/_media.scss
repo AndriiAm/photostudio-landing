@@ -235,7 +235,7 @@
   .footer {
     &__item {
       &--center-column {
-        grid-template-columns: 135px 420px;
+        grid-template-columns: 135px auto;
       }
     }
     &__resources {
@@ -274,7 +274,7 @@
     height: 500px;
     &__inner {
       height: 200px;
-      width: 390px;
+      max-width: 390px;
       padding: 20px 30px 25px;
     }
     &__title {
@@ -380,5 +380,232 @@
         margin-bottom: 30px;
       }
     }
+  }
+  .footer {
+    &__inner {
+      flex-direction: column;
+      position: relative;
+      padding-bottom: 100px;
+    }
+    &__item {
+      &--left-column {
+        flex-direction: row;
+        align-items: center;
+      }
+      &--center-column {
+        margin-top: 30px;
+        justify-content: space-between;
+        row-gap: 30px;
+      }
+      &--right-column {
+        position: absolute;
+        right: 0;
+        bottom: 107px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .main__sessions-info {
+    margin-top: 50px;
+  }
+  .sessions-info {
+    flex-wrap: wrap;
+    &__item {
+      width: 100%;
+    }
+  }
+  .searching-studio {
+    height: 700px;
+    &__inner {
+      position: static;
+    }
+    &__map-wrapper {
+      position: static;
+      height: 500px;
+    }
+  }
+  .importance {
+    &-tips {
+      &__inner {
+        grid-template-columns: 350px;
+        grid-gap: 30px;
+      }
+      &__item {
+        &:nth-of-type(2) {
+          grid-row: 2/3;
+        }
+        &:after {
+          top: calc(100% + 15px);
+        }
+      }
+    }
+  }
+  .headshots-services {
+    padding: 20px;
+  }
+  .headshots-sessions {
+    height: 300px;
+    &__inner {
+      padding-top: 65px;
+    }
+    &__title {
+      font-size: 30px;
+    }
+  }
+  .footer {
+    &__contacts {
+      &-inner {
+        line-height: 35px;
+        font-size: 20px;
+        margin-top: -5px;
+      }
+      &:after {
+        width: 230px;
+      }
+    }
+    &__item {
+      &--right-column {
+        bottom: 70px;
+      }
+    }
+  }
+  .copyrights {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    &__policy {
+      position: static;
+    }
+  }
+}
+
+@media (max-width: 479px) {
+  .headshots {
+    height: 400px;
+    padding-top: 50px;
+    &__title {
+      font-size: 40px;
+    }
+  }
+  .sessions-info {
+    &__title {
+      font-size: 26px;
+    }
+  }
+  .session-list__item {
+    padding-left: 35px;
+  }
+  .searching-studio {
+    &__inner {
+      padding: 20px 0 25px;
+      width: auto;
+    }
+    &__title {
+      font-size: 35px;
+    }
+  }
+  .main__headshots-importance {
+    padding: 75px 0;
+  }
+  .importance {
+    &-explaining {
+      &__title {
+        font-size: 40px ;
+      }
+
+    }
+    &-tips {
+      &__title {
+        font-size: 40px;
+        &-num {
+          font-size: 50px;
+        }
+      }
+      &__inner {
+        grid-template-columns: 295px;
+      }
+      &__text {
+        font-size: 14px;
+      }
+    }
+  }
+  .headshots-importance__services {
+    margin: 80px -25px 0 -25px;
+    width: calc(100% + 50px);
+  }
+  .main__clients {
+    padding: 75px 0;
+  }
+  .clients {
+    &__title {
+      font-size: 35px;
+    }
+    &__subtitle {
+      font-size: 16px;
+      margin-top: -10px;
+    }
+  }
+  .review__text {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .headshots-sessions {
+    &__inner {
+      padding-top: 50px;
+    }
+    &__title {
+      font-size: 27px;
+    }
+  }
+  .blog {
+    padding: 60px 15px;
+  }
+  .footer {
+    &__item {
+      &--left-column {
+        flex-direction: column;
+      }
+      &--center-column {
+        grid-template-columns: 270px;
+      }
+      &--right-column {
+        margin-top: 25px;
+        position: static;
+        align-self: center;
+      }
+    }
+    &__list {
+      &--right-column {
+        align-items: center;
+      }
+    }
+    &__studio-address {
+      align-self: center;
+      margin-top: 30px;
+    }
+    &__address-text {
+      margin-top: -15px;
+    }
+    &__links {
+      text-align: center;
+    }
+    &__resources {
+      grid-row: 2/3;
+    }
+    &__title {
+      text-align: center;
+    }
+  }
+  .dropdown-list {
+    opacity: 0.1;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s, height 0.5s linear;
+  }
+  .dropdown-list.show {
+    opacity: 1;
+    height: 100%;
   }
 }
