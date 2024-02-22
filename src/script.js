@@ -72,14 +72,29 @@ sliderItems.forEach(item => {
     })
 })
 
+const links = document.querySelectorAll(".footer__list-link--resources");
+let linksCopy = [];
 let screenWidth = window.innerWidth;
 
-const links = document.querySelectorAll(".footer__list-link--short");
+links.forEach((item, i) => {
+    linksCopy[i] = item.innerText;
+})
 
-if (screenWidth < 768 && screenWidth >= 480) {
-    links.forEach((item, i) => {
-        if (item.innerText.length > 25) {
-            item.innerText = item.innerText.slice(0, 25) + "...";
+changeStringSize(links);
+
+window.addEventListener("resize", () => {
+    screenWidth = window.innerWidth;
+    changeStringSize(links);
+})
+
+function changeStringSize (array) {
+    array.forEach((item, i) => {
+        if (screenWidth < 768) {
+            if (item.innerText.length > 25) {
+                item.innerText = item.innerText.slice(0, 25) + "...";
+            }
+        } else {
+            item.innerText = linksCopy[i];
         }
     })
 }
@@ -87,18 +102,55 @@ if (screenWidth < 768 && screenWidth >= 480) {
 const listTriggers = document.querySelectorAll(".list-trigger");
 const dropdownLists = document.querySelectorAll(".dropdown-list");
 
-listTriggers.forEach((trigger, i) => {
+listTriggers.forEach(trigger => {
     trigger.addEventListener("click", (e) => {
         listTriggers.forEach((item, i) => {
             if (item == e.target) {
-                dropdownLists[i].classList.toggle("show");
-
-                if (dropdownLists[i].classList.contains('show')) {
-                    dropdownLists[i].style.maxHeight = dropdownLists[i].scrollHeight + "px";
-                } else {
-                    dropdownLists[i].style.maxHeight = null;
-                }
+                (i === 2) ?
+                    dropdownLists[i].classList.toggle("show--small-list") :
+                    dropdownLists[i].classList.toggle("show--big-list");
+                listTriggers[i].classList.toggle("opened")
             }
         })
     })
 })
+
+const menuLinks = document.querySelectorAll("[data-goto]");
+
+if (menuLinks.length > 0) {
+    menuLinks.forEach(menuLink => {
+        menuLink.addEventListener("click", onMenuLinkClick);
+    })
+
+    function onMenuLinkClick(e) {
+        const menuLink = e.target;
+
+        if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+            const gotoBLock = document.querySelector(menuLink.dataset.goto);
+            const gotoBlockValue = gotoBLock.getBoundingClientRect().top + pageYOffset;
+
+            if (iconMenu.classList.contains("_active")) {
+                document.body.classList.remove("_lock");
+                iconMenu.classList.remove("_active");
+                menuBody.classList.remove("_active");
+            }
+
+            window.scrollTo({
+                top: gotoBlockValue,
+                behavior: "smooth"
+            })
+            e.preventDefault();
+        }
+    }
+}
+
+const iconMenu = document.querySelector(".menu-icon");
+const menuBody = document.querySelector(".header__menu");
+
+if (iconMenu) {
+    iconMenu.addEventListener("click", (e) => {
+        document.body.classList.toggle("_lock");
+        iconMenu.classList.toggle("_active");
+        menuBody.classList.toggle("_active");
+    })
+}

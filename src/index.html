@@ -13,33 +13,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!--<header class="header">
+<header class="header">
     <div class="header__inner">
-        <div class="header__logo logo">
+        <div class="header__logo logo header--left-column">
             <img src="images/logo/black_logo.png" alt="logotype">
         </div>
 
         <nav class="header__menu">
             <ul class="header__menu-list">
                 <li class="header__menu-item">
-                    <a class="header__menu-link" href="#">Individuals</a>
+                    <a data-goto=".sessions-info" class="header__menu-link" href="#">Individuals</a>
                 </li>
                 <li class="header__menu-item">
-                    <a class="header__menu-link" href="#">Companies</a>
+                    <a data-goto=".sessions-info" class="header__menu-link" href="#">Companies</a>
                 </li>
                 <li class="header__menu-item">
-                    <a class="header__menu-link" href="#">The Studio</a>
+                    <a data-goto=".searching-studio" class="header__menu-link" href="#">The Studio</a>
                 </li>
                 <li class="header__menu-item">
-                    <a class="header__menu-link" href="#">About Us</a>
+                    <a data-goto=".services" class="header__menu-link" href="#">About Us</a>
                 </li>
                 <li class="header__menu-item">
-                    <a class="header__menu-link" href="#">Blog</a>
+                    <a data-goto=".blog" class="header__menu-link" href="#">Blog</a>
                 </li>
             </ul>
         </nav>
 
-        <div class="header__button-wrapper">
+        <div class="header__button-wrapper header--left-column">
             <div class="header__button button">
                 <a class="button__link" href="#">
                     Book Now
@@ -47,7 +47,7 @@
             </div>
         </div>
 
-        <ul class="header__social-media-wrapper">
+        <ul class="header__social-media-wrapper header--right-column">
             <li class="header__social-media-item">
                 <a href="#" class="header__social-media-link">
                     <i class="fa-brands fa-facebook-f"></i>
@@ -74,8 +74,12 @@
                 </a>
             </li>
         </ul>
+
+        <div class="header__menu-icon menu-icon  header--right-column">
+            <span></span>
+        </div>
     </div>
-</header>-->
+</header>
 
 <main class="main">
     <section class="main__headshots headshots">
@@ -223,14 +227,14 @@
         </div>
     </section>
 
-   <!-- <section class="main__services services">
+    <section class="main__services services">
         <h2 class="services__title">
             Our professional services
         </h2>
 
         <div class="services__menu">
             <ul class="services__menu-list">
-                <li class="services__menu-item services__menu-item&#45;&#45;default">
+                <li class="services__menu-item services__menu-item--default">
                     <a class="services__menu-link" href="#">
                         All
                     </a>
@@ -285,7 +289,6 @@
                 </li>
             </ul>
         </div>
-
         <div class="services__examples-wrapper container">
                 <div class="services__block examples-wrapper">
                     <div class="swiper services__slider">
@@ -424,7 +427,7 @@
                         </div>
                     </div>
 
-                    <div class="services__slider-arrows-wrapper">
+                    <div class="services__slider-arrows-wrapper services__slider-arrows-wrapper--big">
                         <div class="services__arrow swiper-button-prev-unique">
                             <img src="images/services/black_arrow_left.png" alt="left arrow" class="services__arrow-img">
                         </div>
@@ -438,8 +441,73 @@
                 <div class="services__block big-example">
                     <img class="big-example__img animation" src="images/services/1.png" alt="big example">
                 </div>
+
+                <div class="small-slider">
+                    <div class="swiper small-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="services__slider-item">
+                                    <img class="services__slider-img" src="images/services/1.png" alt="example service">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="services__slider-item">
+                                    <img class="services__slider-img" src="images/services/2.png" alt="example service">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="services__slider-item">
+                                    <img class="services__slider-img" src="images/services/3.png" alt="example service">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="services__slider-item">
+                                    <img class="services__slider-img" src="images/services/4.png" alt="example service">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="services__slider-item">
+                                    <img class="services__slider-img" src="images/services/5.png" alt="example service">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="services__slider-item">
+                                    <img class="services__slider-img" src="images/services/6.png" alt="example service">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="services__slider-item">
+                                    <img class="services__slider-img" src="images/services/7.png" alt="example service">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="services__slider-item">
+                                    <img class="services__slider-img" src="images/services/2.png" alt="example service">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services__slider-arrows-wrapper services__slider-arrows-wrapper--small">
+                        <div class="services__arrow swiper-button-prev-unique">
+                            <img src="images/services/black_arrow_left.png" alt="left arrow" class="services__arrow-img">
+                        </div>
+
+                        <div class="services__arrow swiper-button-next-unique">
+                            <img src="images/services/black_arrow_right.png" alt="right arrow" class="services__arrow-img">
+                        </div>
+                    </div>
+                </div>
+
             </div>
-    </section>-->
+    </section>
 
     <section class="main__headshots-importance headshots-importance">
         <div class="headshots-importance__wrapper container">
@@ -647,7 +715,7 @@
         </div>
     </section>
 
-    <section class="main__blog blog">
+    <section class="main__blog blog" id="blog">
         <h2 class="blog__title">
             Our Blog
         </h2>
@@ -790,7 +858,7 @@
                         </li>
 
                         <li class="footer__list-item">
-                            <a href="#" class="footer__list-link">
+                            <a href="https://www.youtube.com/" class="footer__list-link">
                                 About Us
                             </a>
                         </li>
@@ -808,43 +876,43 @@
                         Resources
                     </p>
 
-                    <ul class="footer__list dropdown-list">
-                        <li class="footer__list-item footer__list-item--short">
+                    <ul class="footer__list footer__list--resources dropdown-list">
+                        <li class="footer__list-item footer__list-item--resources">
                             <img src="images/icons/footer_arrow.png" alt="" class="footer__resources-icon">
 
-                            <a href="#" class="footer__list-link footer__list-link--short">
+                            <a href="#" class="footer__list-link footer__list-link--resources">
                                 Lorem ipsum dolor sit amet, consectetur adipis.
                             </a>
                         </li>
 
-                        <li class="footer__list-item footer__list-item--short">
+                        <li class="footer__list-item footer__list-item--resources">
                             <img src="images/icons/footer_arrow.png" alt="" class="footer__resources-icon">
 
-                            <a href="#" class="footer__list-link footer__list-link--short">
+                            <a href="#" class="footer__list-link footer__list-link--resources">
                                 Donec nisi enim, finibus non malesuada vitae.
                             </a>
                         </li>
 
-                        <li class="footer__list-item footer__list-item--short">
+                        <li class="footer__list-item footer__list-item--resources">
                             <img src="images/icons/footer_arrow.png" alt="" class="footer__resources-icon">
 
-                            <a href="#" class="footer__list-link footer__list-link--short">
+                            <a href="#" class="footer__list-link footer__list-link--resources">
                                 Morbi id aliquet sem. Ut mattis diam sit amet.
                             </a>
                         </li>
 
-                        <li class="footer__list-item footer__list-item--short">
+                        <li class="footer__list-item footer__list-item--resources">
                             <img src="images/icons/footer_arrow.png" alt="" class="footer__resources-icon">
 
-                            <a href="#" class="footer__list-link footer__list-link--short">
+                            <a href="#" class="footer__list-link footer__list-link--resources">
                                 Curabitur eu efficitur quam. Fusce interdum sem.
                             </a>
                         </li>
 
-                        <li class="footer__list-item footer__list-item--short">
+                        <li class="footer__list-item footer__list-item--resources">
                             <img src="images/icons/footer_arrow.png" alt="" class="footer__resources-icon">
 
-                            <a href="#" class="footer__list-link footer__list-link--short">
+                            <a href="#" class="footer__list-link footer__list-link--resources">
                                 Lorem ipsum dolor sit amet, consectetur adipis.
                             </a>
                         </li>
@@ -852,11 +920,11 @@
                 </div>
 
                 <div class="footer__contacts">
-                    <p class="footer__title">
+                    <p class="footer__title list-trigger">
                         Contact
                     </p>
 
-                    <div class="footer__contacts-inner">
+                    <div class="footer__contacts-inner dropdown-list">
                         <a class="footer__contacts-link" href="tel:+1233453781">(123) 345 3781</a> <br>
                         <a class="footer__contacts-link" href="mailto:smile@studio-inc.com">smile@studio-inc.com</a>
                     </div>

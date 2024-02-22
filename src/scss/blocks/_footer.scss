@@ -52,6 +52,10 @@
     &-link {
       color: white;
       text-decoration: none;
+      transition: all 0.2s linear;
+      &:hover, &:active {
+        color: #626262;
+      }
     }
   }
   &__title {
@@ -87,6 +91,10 @@
     &-link {
       text-decoration: none;
       color: white;
+      transition: all 0.2s linear;
+      &:hover, &:active {
+        color: #626262;
+      }
     }
     &:after {
       position: absolute;
@@ -118,6 +126,7 @@
   line-height: 30px;
   color: rgba(255, 255, 255, 0.2);
   &__policy {
+    display: inline-block;
     position: absolute;
     top: 25px;
     right: 0;
