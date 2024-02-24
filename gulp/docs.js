@@ -11,6 +11,7 @@ const webpack = require("webpack-stream");
 const imagemin = require("gulp-imagemin");
 const changed = require("gulp-changed");
 const autoprefixer = require("gulp-autoprefixer");
+const csso = require("gulp-csso");
 const htmlClean = require("gulp-htmlclean");
 
 gulp.task("cleaner:docs", function (done) {
@@ -52,6 +53,7 @@ gulp.task("scss:docs", function () {
         .pipe(sourceMaps.init())
         .pipe(autoprefixer())
         .pipe(scss())
+        .pipe(csso())
         .pipe(sourceMaps.write())
         .pipe(gulp.dest("./docs/css/"))
 })
