@@ -13,6 +13,9 @@ const changed = require("gulp-changed");
 const autoprefixer = require("gulp-autoprefixer");
 const csso = require("gulp-csso");
 const htmlClean = require("gulp-htmlclean");
+const webp = require("gulp-webp");
+const webpHtml = require("gulp-webp-html");
+const webpCss = require("gulp-webp-css");
 
 gulp.task("cleaner:docs", function (done) {
     if (fs.existsSync("./docs/")) {
@@ -41,7 +44,9 @@ gulp.task("includeFiles:docs", function() {
             prefix: '@@',
             basepath: '@file'
         }))
+        .pipe(webpHtml())
         .pipe(htmlClean())
+
         .pipe(gulp.dest("./docs/"))
 });
 
@@ -52,6 +57,7 @@ gulp.task("scss:docs", function () {
         .pipe(plumber(plumberNotify("scss")))
         .pipe(sourceMaps.init())
         .pipe(autoprefixer())
+        .pipe(webpCss())
         .pipe(scss())
         .pipe(csso())
         .pipe(sourceMaps.write())
@@ -60,6 +66,10 @@ gulp.task("scss:docs", function () {
 
 gulp.task("copyImages:docs", function () {
     return gulp.src("./src/images/**/*")
+        .pipe(changed("./docs/images/"))
+        .pipe(webp())
+        .pipe(gulp.dest("./docs/images/"))
+        .pipe(gulp.src("./src/images/**/*"))
         .pipe(changed("./docs/images/"))
         .pipe(imagemin({
             verbose: true

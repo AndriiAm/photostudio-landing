@@ -33,7 +33,7 @@ const plumberNotify = (title) => {
 gulp.task("includeFiles:dev", function() {
     return gulp
         .src("./src/*.html")
-        .pipe(changed("./build/"))
+        .pipe(changed("./build/", {hasChanged: changed.compareContents}))
         .pipe(plumber(plumberNotify("html")))
         .pipe(fileInclude({
             prefix: '@@',
